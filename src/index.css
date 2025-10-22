@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ribeye&family=Rochester&display=swap");
+@import "tailwindcss";
+
+@theme {
+	--font-greatVibes: "Great Vibes", cursive;
+	--font-monteCarlo: "MonteCarlo", cursive;
+	--font-rochester: "Rochester", cursive;
+	--font-ribeye: "Ribeye", serif;
+}
