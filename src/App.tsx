@@ -4,9 +4,9 @@ import Countdown, { zeroPad } from "react-countdown"
 import { FaHeart as HeartIcon } from "react-icons/fa"
 import "./App.css"
 
-import FOOTER from "../public/FOOTER.jpg"
-import HEADER from "../public/HEADER.jpg"
-import LOCATION from "../public/Location.jpg"
+import FOOTER from "./assets/images/FOOTER.jpg"
+import HEADER from "./assets/images/HEADER.jpg"
+import LOCATION from "./assets/images/Location.jpg"
 
 type RenderProps = {
 	days: string | number
