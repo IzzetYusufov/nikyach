@@ -4,9 +4,9 @@ import Countdown, { zeroPad } from "react-countdown"
 import { FaHeart as HeartIcon } from "react-icons/fa"
 import "./App.css"
 
-import FOOTER from "./assets/images/FOOTER.jpg"
-import HEADER from "./assets/images/HEADER.jpg"
-import LOCATION from "./assets/images/Location.jpg"
+import FOOTER from "/public/FOOTER.jpg"
+import HEADER from "/public/HEADER.jpg"
+import LOCATION from "/public/Location.jpg"
 
 type RenderProps = {
 	days: string | number
@@ -15,8 +15,6 @@ type RenderProps = {
 	seconds: string | number
 	completed: boolean
 }
-
-const Completionist = () => <span>You are good to go!</span>
 
 const renderer = ({
 	days,
@@ -27,7 +25,37 @@ const renderer = ({
 }: RenderProps) => {
 	if (completed) {
 		// Render a completed state
-		return <Completionist />
+		return (
+			<div className="flex justify-center gap-5 md:gap-10 lg:gap-15 text-black font-ribeye mt-5">
+				<div className="flex flex-col">
+					<h1 className="flex justify-center text-2xl md:text-6xl lg:text-8xl">
+						00
+					</h1>
+					<h2 className="text-center lg:text-4xl">ДНЕЙ</h2>
+				</div>
+
+				<div className="flex flex-col">
+					<h1 className="flex justify-center text-2xl md:text-6xl lg:text-8xl">
+						00
+					</h1>
+					<h2 className="text-center lg:text-4xl">ЧАСОВ</h2>
+				</div>
+
+				<div className="flex flex-col">
+					<h1 className="flex justify-center text-2xl md:text-6xl lg:text-8xl">
+						00
+					</h1>
+					<h2 className="text-center lg:text-4xl">МИНУТ</h2>
+				</div>
+
+				<div className="flex flex-col">
+					<h2 className="flex justify-center text-2xl md:text-6xl lg:text-8xl">
+						00
+					</h2>
+					<h4 className="text-center lg:text-4xl">СЕКУНД</h4>
+				</div>
+			</div>
+		)
 	} else {
 		// Render a countdown
 		return (
@@ -69,7 +97,7 @@ function App() {
 
 	return (
 		<>
-			<div className="grid grid-cols-2 pt-6 lg:py-8 relative bg-white">
+			<div className="grid grid-cols-2 pt-6 lg:py-8 relative bg-white xl:px-50 2xl:px-80">
 				<div className="col-start-1 col-end-2 md:px-5 lg:px-15">
 					<img
 						src={HEADER}
@@ -121,14 +149,15 @@ function App() {
 						className="mx-auto w-full text-sm md:text-base lg:text-lg"
 						selectRange={false}
 						showNavigation={false}
-						activeStartDate={new Date(2025, 11, 1)}
+						activeStartDate={new Date(2025, 11, 14)}
 						showDoubleView={false}
+						defaultActiveStartDate={new Date(2025, 11, 14)}
 						nextLabel={""}
 						next2Label={""}
 						prev2Label={""}
 						prevLabel={""}
-						onChange={() => {}}
 						tileClassName={() => ""}
+						tileDisabled={() => true}
 					/>
 
 					<div className="absolute bottom-[136px] md:bottom-[150px] lg:bottom-[180px] right-[12px] text-[40px] text-red-600">
@@ -141,22 +170,24 @@ function App() {
 				</div>
 
 				<div className="col-span-2 text-white">
-					<div className="flex gap-5 relative bg-black mb-5 p-5">
+					<div className="flex gap-5 relative bg-black mb-5 p-5 md:justify-evenly md:p-10">
 						<img
 							src={LOCATION}
 							alt="location Logo"
-							className="object-cover w-45"
+							className="object-cover w-45 md:w-80"
 						/>
 
-						<div className="flex flex-col w-full font-greatVibes text-2xl text-center">
-							<h1>Ресторан</h1>
-							<h1 className="mb-5">Алие</h1>
+						<div className="flex flex-col font-greatVibes text-2xl text-center md:justify-around md:text-3xl">
+							<div>
+								<h1>Ресторан</h1>
+								<h1 className="mb-5">Алие</h1>
 
-							<p className="mb-8">ул. Ленина, 96, Бахчисарай</p>
+								<p className="mb-8">ул. Ленина, 96, Бахчисарай</p>
+							</div>
 
 							<a
 								href="https://yandex.com/maps/-/CLbzzJ2w"
-								className="p-2 border border-white font-mono text-sm"
+								className="p-2 border border-white font-mono text-sm md:max-w-80 md:flex md:justify-center md:mx-auto md:px-6 md:py-3 md:text-2xl"
 							>
 								ОТКРЫТЬ КАРТУ →
 							</a>
@@ -172,13 +203,20 @@ function App() {
 					14:00
 				</h1>
 
-				<div className="col-span-2 h-[120px] w-full">
+				<div className="col-span-2 w-full">
 					<img
 						src={FOOTER}
 						alt="footer Logo"
-						className="object-cover w-full h-[350px]"
+						className="object-cover w-full h-[350px] mb-2"
 					/>
 				</div>
+
+				<h1 className="col-span-2 text-center font-thin md:text-2xl mb-2 md:py-2 md:px-8 lg:text-3xl">
+					С нетерпением ждем Вас!
+				</h1>
+				<h1 className="col-span-2 text-center font-thin md:text-2xl mb-2 md:pb-10 md:px-8 lg:text-3xl">
+					с любовью, Иззет и Реяна
+				</h1>
 			</div>
 		</>
 	)

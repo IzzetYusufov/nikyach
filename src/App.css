@@ -1,0 +1,8 @@
+/* Пример CSS-стиля для переопределения (вам нужно будет найти, какой именно класс дает серый цвет) */
+.react-calendar__tile:disabled,
+.react-calendar__tile--disabled {
+	background: transparent !important; /* Убираем фоновый цвет */
+	color: inherit !important; /* Наследуем цвет текста */
+	cursor: default !important; /* Меняем курсор */
+	/* И все остальные стили, которые были изменены на серый */
+}
