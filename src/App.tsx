@@ -4,9 +4,9 @@ import Countdown, { zeroPad } from "react-countdown"
 import { FaHeart as HeartIcon } from "react-icons/fa"
 import "./App.css"
 
-import FOOTER from "/public/FOOTER.jpg"
-import HEADER from "/public/HEADER.jpg"
-import LOCATION from "/public/Location.jpg"
+import FOOTER from "/FOOTER.jpg"
+import HEADER from "/HEADER.jpg"
+import LOCATION from "/Location.jpg"
 
 type RenderProps = {
 	days: string | number
@@ -195,11 +195,11 @@ function App() {
 					</div>
 				</div>
 
-				<h1 className="col-span-2 mb-5 text-center text-3xl font-ribeye">
+				<h1 className="col-span-2 mb-5 text-center text-3xl font-thin">
 					14.12.2025
 				</h1>
 
-				<h1 className="col-span-2 mb-5 text-center text-3xl font-ribeye">
+				<h1 className="col-span-2 mb-5 text-center text-3xl font-thin">
 					14:00
 				</h1>
 
@@ -211,10 +211,10 @@ function App() {
 					/>
 				</div>
 
-				<h1 className="col-span-2 text-center font-thin md:text-2xl mb-2 md:py-2 md:px-8 lg:text-3xl">
+				<h1 className="col-span-2 text-center font-monteCarlo text-3xl mb-2 md:py-2 md:px-8 lg:text-3xl">
 					С нетерпением ждем Вас!
 				</h1>
-				<h1 className="col-span-2 text-center font-thin md:text-2xl mb-2 md:pb-10 md:px-8 lg:text-3xl">
+				<h1 className="col-span-2 text-center font-monteCarlo text-3xl mb-2 md:pb-10 md:px-8 lg:text-3xl">
 					с любовью, Иззет и Реяна
 				</h1>
 			</div>
