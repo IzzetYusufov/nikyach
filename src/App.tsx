@@ -7,6 +7,7 @@ import "./App.css"
 import FOOTER from "/FOOTER.jpg"
 import HEADER from "/HEADER.jpg"
 import LOCATION from "/Location.jpg"
+import HEART from "/heart.jpg"
 
 type RenderProps = {
 	days: string | number
@@ -160,24 +161,24 @@ function App() {
 						tileDisabled={() => true}
 					/>
 
-					<div className="absolute bottom-[136px] md:bottom-[150px] lg:bottom-[180px] right-[12px] text-[40px] text-red-600">
+					<div className="absolute bottom-[134px] md:bottom-[150px] lg:bottom-[180px] right-4 text-[28px] md:text-[40px] text-red-600">
 						<HeartIcon className="text-red-600" />
 
-						<span className="absolute inset-0 flex items-center justify-center text-white text-[14px] bottom-1 font-bold">
+						<span className="absolute inset-0 flex items-center justify-center text-white text-[10px] md:text-[14px] font-bold">
 							14
 						</span>
 					</div>
 				</div>
 
-				<div className="col-span-2 text-white">
-					<div className="flex gap-5 relative bg-black mb-5 p-5 md:justify-evenly md:p-10">
+				<div className="col-span-2 text-white mb-6">
+					<div className="flex gap-5 relative bg-black p-5 md:justify-evenly md:p-10">
 						<img
 							src={LOCATION}
 							alt="location Logo"
 							className="object-cover w-45 md:w-80"
 						/>
 
-						<div className="flex flex-col font-greatVibes text-2xl text-center md:justify-around md:text-3xl">
+						<div className="flex flex-col font-monteCarlo text-2xl text-center md:justify-around md:text-3xl">
 							<div>
 								<h1>Ресторан</h1>
 								<h1 className="mb-5">Алие</h1>
@@ -195,11 +196,11 @@ function App() {
 					</div>
 				</div>
 
-				<h1 className="col-span-2 mb-5 text-center text-3xl font-thin">
+				<h1 className="col-span-2 mb-6 text-center text-3xl font-thin">
 					14.12.2025
 				</h1>
 
-				<h1 className="col-span-2 mb-5 text-center text-3xl font-thin">
+				<h1 className="col-span-2 mb-6 text-center text-3xl font-thin">
 					14:00
 				</h1>
 
@@ -207,16 +208,22 @@ function App() {
 					<img
 						src={FOOTER}
 						alt="footer Logo"
-						className="object-cover w-full h-[350px] mb-2"
+						className="object-cover w-full h-[350px] mb-6"
 					/>
 				</div>
 
-				<h1 className="col-span-2 text-center font-monteCarlo text-3xl mb-2 md:py-2 md:px-8 lg:text-3xl">
+				<h1 className="col-span-2 text-center font-monteCarlo text-2xl mb-2 md:py-2 md:px-8 lg:text-3xl">
 					С нетерпением ждем Вас!
 				</h1>
-				<h1 className="col-span-2 text-center font-monteCarlo text-3xl mb-2 md:pb-10 md:px-8 lg:text-3xl">
+				<h1 className="col-span-2 mb-6 text-center font-monteCarlo text-2xl md:pb-10 md:px-8 lg:text-3xl">
 					с любовью, Иззет и Реяна
 				</h1>
+
+				<img
+					src={HEART}
+					alt="heart"
+					className="col-span-2 justify-self-center mb-6 w-10 h-10 object-top object-cover"
+				/>
 			</div>
 		</>
 	)
