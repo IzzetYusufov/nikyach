@@ -102,7 +102,7 @@ function App() {
 				<div className="col-start-1 col-end-2 md:px-5 lg:px-15">
 					<img
 						src={HEADER}
-						alt="Nikyah Logo"
+						alt="Nishan Logo"
 						className="cover w-full object-fill"
 					/>
 				</div>
