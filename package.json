@@ -1,5 +1,5 @@
 {
-	"name": "nishan",
+	"name": "nikyach",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -11,7 +11,7 @@
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build"
 	},
-	"homepage": "https://izzetyusufov.github.io/nishan/",
+	"homepage": "https://izzetyusufov.github.io/nikyach/",
 	"dependencies": {
 		"@tailwindcss/vite": "^4.1.15",
 		"react": "^19.1.1",

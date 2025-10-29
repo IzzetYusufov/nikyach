@@ -30,28 +30,28 @@ const renderer = ({
 			<div className="flex justify-center gap-5 md:gap-10 lg:gap-15 text-black font-ribeye mt-5">
 				<div className="flex flex-col">
 					<h1 className="flex justify-center text-2xl md:text-6xl lg:text-8xl">
-						00
+						{days}
 					</h1>
 					<h2 className="text-center lg:text-4xl">ДНЕЙ</h2>
 				</div>
 
 				<div className="flex flex-col">
 					<h1 className="flex justify-center text-2xl md:text-6xl lg:text-8xl">
-						00
+						{hours}
 					</h1>
 					<h2 className="text-center lg:text-4xl">ЧАСОВ</h2>
 				</div>
 
 				<div className="flex flex-col">
 					<h1 className="flex justify-center text-2xl md:text-6xl lg:text-8xl">
-						00
+						{minutes}
 					</h1>
 					<h2 className="text-center lg:text-4xl">МИНУТ</h2>
 				</div>
 
 				<div className="flex flex-col">
 					<h2 className="flex justify-center text-2xl md:text-6xl lg:text-8xl">
-						00
+						{seconds}
 					</h2>
 					<h4 className="text-center lg:text-4xl">СЕКУНД</h4>
 				</div>
@@ -94,7 +94,7 @@ const renderer = ({
 }
 
 function App() {
-	const countDownDate = new Date("2025-12-14T14:00:00+03:00").getTime()
+	const countDownDate = new Date("2025-12-20T14:00:00+03:00").getTime()
 
 	return (
 		<>
@@ -102,13 +102,13 @@ function App() {
 				<div className="col-start-1 col-end-2 md:px-5 lg:px-15">
 					<img
 						src={HEADER}
-						alt="Nishan Logo"
+						alt="Nikyah Logo"
 						className="cover w-full object-fill"
 					/>
 				</div>
 				<div className="col-start-2 relative col-end-3 text-center text-black leading-none justify-self-center">
 					<h1 className="opacity-10 font-extrabold text-8xl md:text-[180px] lg:text-[200px] font-rochester">
-						14
+						20
 					</h1>
 					<h1 className="opacity-10 font-extrabold text-8xl md:text-[180px] lg:text-[200px] font-rochester">
 						12
@@ -137,7 +137,7 @@ function App() {
 					<h1 className="mb-4">ДОРОГИЕ ГОСТИ!</h1>
 					<p>
 						С огромной радостью и любовью приглашаем Вас разделить с нами
-						трогательный и важный момент нашей жизни — день нашего нишана.
+						трогательный и важный момент нашей жизни — день нашего никяха.
 					</p>
 				</div>
 
@@ -161,11 +161,11 @@ function App() {
 						tileDisabled={() => true}
 					/>
 
-					<div className="absolute bottom-[134px] md:bottom-[150px] lg:bottom-[180px] right-4 text-[28px] md:text-[40px] text-red-600">
+					<div className="absolute right-14 bottom-[95px] md:bottom-[115px] md:right-16 lg:bottom-[140px] text-[35px] md:text-[40px] text-red-600">
 						<HeartIcon className="text-red-600" />
 
-						<span className="absolute inset-0 flex items-center justify-center text-white text-[10px] md:text-[14px] font-bold">
-							14
+						<span className="absolute inset-0 flex items-center justify-center text-white text-[12px] md:text-[14px] bottom-1 font-bold">
+							20
 						</span>
 					</div>
 				</div>
@@ -175,19 +175,19 @@ function App() {
 						<img
 							src={LOCATION}
 							alt="location Logo"
-							className="object-cover w-45 md:w-80"
+							className="object-cover  w-45 md:w-80"
 						/>
 
 						<div className="flex flex-col font-monteCarlo text-2xl text-center md:justify-around md:text-3xl">
 							<div>
 								<h1>Ресторан</h1>
-								<h1 className="mb-5">Алие</h1>
+								<h1 className="mb-5">Сарабуз</h1>
 
-								<p className="mb-8">ул. Ленина, 96, Бахчисарай</p>
+								<p className="mb-8">село Укромное, Студенческая ул. 1А</p>
 							</div>
 
 							<a
-								href="https://yandex.com/maps/-/CLbzzJ2w"
+								href="https://yandex.com/maps/-/CLfAjJkM"
 								className="p-2 border border-white font-mono text-sm md:max-w-80 md:flex md:justify-center md:mx-auto md:px-6 md:py-3 md:text-2xl"
 							>
 								ОТКРЫТЬ КАРТУ →
@@ -197,7 +197,7 @@ function App() {
 				</div>
 
 				<h1 className="col-span-2 mb-6 text-center text-3xl font-thin">
-					14.12.2025
+					20.12.2025
 				</h1>
 
 				<h1 className="col-span-2 mb-6 text-center text-3xl font-thin">
