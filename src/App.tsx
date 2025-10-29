@@ -178,12 +178,12 @@ function App() {
 							className="object-cover  w-45 md:w-80"
 						/>
 
-						<div className="flex flex-col font-greatVibes text-2xl text-center md:justify-around md:text-3xl">
+						<div className="flex flex-col font-thin font-greatVibes text-2xl text-center md:justify-around md:text-3xl">
 							<div>
 								<h1>Ресторан</h1>
 								<h1 className="mb-5">Сарабуз</h1>
 
-								<p className="mb-8">село Укромное, Студенческая ул. 1А</p>
+								<p className="mb-8">село Укромное, Студенческая ул. 1A</p>
 							</div>
 
 							<a
