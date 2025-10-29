@@ -4,9 +4,9 @@ import Countdown, { zeroPad } from "react-countdown"
 import { FaHeart as HeartIcon } from "react-icons/fa"
 import "./App.css"
 
+import LOCATION from "../public/1691961613_cerenas-club-p-sarabuz-restoran-vkontakte-3.jpg"
 import FOOTER from "/FOOTER.jpg"
 import HEADER from "/HEADER.jpg"
-import LOCATION from "/Location.jpg"
 import HEART from "/heart.jpg"
 
 type RenderProps = {
@@ -178,7 +178,7 @@ function App() {
 							className="object-cover  w-45 md:w-80"
 						/>
 
-						<div className="flex flex-col font-monteCarlo text-2xl text-center md:justify-around md:text-3xl">
+						<div className="flex flex-col font-greatVibes text-2xl text-center md:justify-around md:text-3xl">
 							<div>
 								<h1>Ресторан</h1>
 								<h1 className="mb-5">Сарабуз</h1>
